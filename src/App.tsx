@@ -13,9 +13,7 @@ const App = () => {
   const [color, setColor] = useState<string>('⚪')
   const roleNameInput = useRef<HTMLInputElement>(null)
 
-  const md = new Remarkable({
-    
-  })
+  const md = new Remarkable()
 
   const handleAddRole = () => setRoles([...roles, { roleName: roleNameInput.current?.value!, roleEmoji: color }])
   const getRawMarkup = (raw: string) => {
