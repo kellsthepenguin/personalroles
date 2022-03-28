@@ -41,7 +41,11 @@ const App = () => {
         <div
           className='text-black bg-white max-w-7xl'
           dangerouslySetInnerHTML={getRawMarkup(`**PERSONAL ROLES**\n\n${roles.map((role) => `\`${role.roleEmoji} ${role.roleName} \``).join(' ')}`)!} 
-        />
+        /> <br />
+
+        <a href='https://github.com/kellsthepenguin/personalroles'>
+          <img src='./github-brands.svg' height={32} width={32} color='white' />
+        </a>
       </div>
     </div>
   )
